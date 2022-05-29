@@ -53,7 +53,8 @@ li {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -73,7 +74,8 @@ input,button{
 }
 
 /* Heading */
-.tasks__title, .new-task__label {
+.tasks__title, 
+.new-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +85,8 @@ input,button{
   text-transform: uppercase;
 }
 
-.new-task__input.task, .tasks__input.task {
+.new-task__input.task,
+.tasks__input.task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,7 +99,8 @@ input,button{
   color: #888;
 }
 
-.new-task__input.task:focus, .tasks__input.task:focus {
+.new-task__input.task:focus,
+.tasks__input.task:focus {
   color: #333;
 }
 
