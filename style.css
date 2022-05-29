@@ -1,0 +1,174 @@
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: lato, sans-serif;
+}
+
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__link {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    text-align: center;
+  }
+
+}
+
+.container {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.new-task__wrapper {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button{
+  outline: none;
+}
+
+.btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: lato, sans-serif;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+.tasks__title, 
+.new-task__label {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.new-task__input.task,
+.tasks__input.task {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: lato, sans-serif;
+  color: #888;
+}
+
+.new-task__input.task:focus,
+.tasks__input.task:focus {
+  color: #333;
+}
+
+/* New Task */
+.new-task__label {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.new-task__input {
+  width: 318px;
+}
+
+/* Task list */
+.tasks__item {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks__item > * {
+  vertical-align: middle;
+}
+
+.tasks__item > .tasks__input_checkbox {
+  margin: 0 10px;
+}
+
+.tasks__item > .tasks__label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.tasks__item > .tasks__input_text {
+  width: 226px;
+}
+
+.delete-btn__img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.delete-btn__img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.tasks__list#completed-tasks .tasks__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.tasks__item .tasks__input_text {
+  display: none;
+}
+
+.tasks__item.edit-mode .tasks__input_text {
+  display: inline-block;
+  width: 224px;
+}
+
+.tasks__item.edit-mode .tasks__label {
+  display: none;
+}
